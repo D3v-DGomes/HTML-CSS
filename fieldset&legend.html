@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formularios</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fieldset&legend.css" />
+    </head>
+    <body>
+        <form method="post" action="app.php" enctype="multipart/form-data">
+
+            <input type="hidden" name="country" value="BR" />
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>
+                    Primeiro nome: <br/>
+                    <input type="text" name="first-name" required minlength="2" maxlength="16"/>
+                </label>
+                <label>
+                    Último nome: <br/>
+                    <input type="text" name="last-name" />
+                </label>
+                <label>
+                    Idade: <br/> 
+                    <input type="number" name="age" required min="18" max="90"/>
+                </label>
+                <label>
+                    Data de nascimento: <br/>
+                    <input type="date" name="birthdate" max="2005-01-01" />
+                </label>
+                <label>
+                    Email: <br/>
+                    <input tupe="text" name="email" pattern="(^([0-9a-zA-Z]+([_.-]?[0-9a-zA-Z]+)*@[0-9a-zA-Z]+[0-9,a-z,A-Z,.,-]*(.){1}[a-zA-Z]{2,4})+$)" title="endereço de email" />
+                </label>
+                <label>
+                    Foto: <br/>
+                    <input type="file" name="photo" accept="application/pdf" />
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label>
+                    Nome da empresa: <br/>
+                    <input type="text" name="companyname" />
+                </label>
+                <label>
+                    Cargo na empresa: <br/>
+                    <input type="text" name="companyjobtitle" />
+                </label>
+             </fieldset>
+
+            <input type="submit" name="Cadastrar" />
+
+        </form>
+    </body>
+</html>
