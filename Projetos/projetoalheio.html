@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projetoalheio.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Cadastro de DEVs</h1>
+        <p id="subtitulo">Complete com suas informações</p>
+    </div>
+    <br>
+    <form action="paginas/login.html" method="get" autocomplete="off">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="name" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="name" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+        <div class="campo">
+            <label for="email"><strong>E-mail:</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="telefone"><strong>Telefone (WhatsApp):</strong></label>
+            <input type="tel" name="contat" id="telefone" required>
+        </div>
+        </fieldset>
+       
+        <div class="campo">
+            <label><strong>Você é um(a) desenvolvedor(a):</strong></label>
+            <label>
+                <input type="radio" name="tipodev" value="frontend"> Front-End
+            </label>
+            <label>
+                <input type="radio" name="tipodev" value="backend"> Back-End
+            </label>
+            <label>
+                <input type="radio" name="tipodev" value="fullstack"> Full Stack
+            </label>                          
+        </div>
+
+        <div class="campo">
+            <label for="senioridade"><strong>Qual a sua senioridade?</strong></label>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option value="junior">Junior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Senior</option>
+            </select>
+        </div>
+       
+        <div id="check">
+            <fieldset class="grupo">
+                <label><strong>Selecione as tecnologias você utiliza:</strong></label><br>
+                <div id="tecs">
+                <input type="checkbox" name="tec1" id="tec1" value="HTML">
+                <label for="tec1">HTML</label>
+                <input type="checkbox" name="tec2" id="tec2" value="CSS">
+                <label for="tec2">CSS</label>
+                <input type="checkbox" name="tec3" id="tec3" value="JavaScript">
+                <label for="tec3">JavaScript</label>
+                <input type="checkbox" name="tec4" id="tec4" value="PHP">
+                <label for="tec4">PHP</label>
+                <input type="checkbox" name="tec5" id="tec5" value="C#">
+                <label for="tec5">C#</label>
+                <input type="checkbox" name="tec6" id="tec6" value="Python">
+                <label for="tec6">Python</label>
+                <input type="checkbox" name="tec7" id="tec7" value="Java">
+                <label for="tec7">Java</label>  
+                </div>      
+            </fieldset>
+        </div>
+
+        <div class="campo">
+            <br>
+            <label><strong>Selecione as tecnologias que você utiliza:</strong></label>
+            <textarea name="about" id="sobre"></textarea>
+        </div>
+
+        <button type="submit" class="botao">Cadastrar</button>
+        <button type="reset" class="botao">Limpar</button>
+
+    </form>
+</body>
+</html>
