@@ -1,0 +1,32 @@
+body {
+    background-image:url(../imagens/areawork.png);
+    background-size:cover;
+    background-position:bottom;
+}
+div {
+    background-color: rgba(0, 0, 0, 0.6);
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: aliceblue;
+    font-size: 25px;
+}
+.ex001 {
+    background-color: #3c3c3c;
+    width: 150px;
+    height: 250px;
+    position: fixed;
+    top: -50px;
+    left: 1327px;
+    transform: scale(0.8, 1.7);
+    transform: rotate(90deg);
+}
+.ex002 {
+    background-color: #CCC;
+    width: 150px;
+    height: 250px;
+    margin: auto;
+    transform: skew(30deg, 30deg);
+}

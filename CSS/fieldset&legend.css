@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #242424;
+    margin: 60px;
+    font-size: 17px;
+}
+label {
+    display: block;
+    color: #FFF;
+}
+legend {
+    margin: 15px;
+    padding: 5px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    background-color: #999;
+}
+fieldset {
+    background-color: #393939;
+    margin-bottom: 20px;
+    border: 3px solid color #999;
+
+}

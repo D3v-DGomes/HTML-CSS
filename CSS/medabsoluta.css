@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 100px;
+    font-size: 18px;
+    background-color: #CCC;
+}
+h1 {
+    margin-bottom: 30px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFF;
+    background-color: #000;
+}
+ol {
+    background-color: #999;
+    margin-bottom: 45px;
+}
+.box {
+    font-size: 18px;
+}
+.box-interno {
+    background-color: #999;
+}
