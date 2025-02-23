@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/CSS/formularios3.css" />
+        <title>Formularios 3</title>
+    </head>
+    <body>
+
+        <div class="titulo">Cadastro de Usuários</div>
+
+        <div class="container">
+
+            <div class="fieldset1">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+        
+                    <div class="info_pessoais">
+        
+                        <label>
+                            Nome completo: <br>
+                            <input type="text" name="nome" id="input1" /> <br><br>
+                        </label>
+                        
+            
+                        <label>
+                            RG: <br>
+                            <input type="number" name="rg" id="input1" /> <br><br>
+                        </label>
+                    
+            
+                        <label>
+                            CPF: <br>
+                            <input type="number" name="cpf" id="input1" /> <br><br>
+                        </label>
+                        
+            
+                        <label>
+                            Data de nascimento: <br>
+                            <input type="date" name="data" id="input1" /> <br><br>
+                        </label>
+                        
+                        <label>
+                            Gênero: <br>
+                            <select name="genero">
+                                <option value="1">Masculino</option>
+                                <option value="2">Feminino</option>
+                                <option value="3">Indefinido</option>
+                            </select> <br><br>
+                        </label>
+                        
+                        <label>
+                            Nome do pai: <br>
+                            <input type="text" name="pai" id="input1" /> <br><br>
+                        </label>
+                        
+            
+                        <label>
+                            Nome da mãe: <br>
+                            <input type="text" name="mae" id="input1" /> <br><br>
+                        </label>
+                        
+            
+                        <label>
+                            Telefone: <br>
+                            <input type="tel" name="phone" id="input1" /> <br><br>
+                        </label>
+                        
+            
+                        <label>
+                            Email: <br>
+                            <input type="email" name="email" id="input1" /> <br><br>
+                        </label>
+                        
+                    </div>
+                    
+                </fieldset>
+
+            </div>
+
+
+            <div class="fieldset2">
+
+                <fieldset id="fiel2">
+                    <legend>Dados Profissionais</legend>
+        
+                    <label>
+                        Escolaridade: <br>
+                        <select name="categoria">
+                            <option value="1">Analfabeto</option>
+                            <option value="2">Ensino fundamental incompleto</option>
+                            <option value="3">Ensino fundamental completo</option>
+                            <option value="4">Ensino médio incompleto</option>
+                            <option value="5">Ensino médio completo</option>
+                            <option value="6">Superior incompleto/cursando</option>
+                            <option value="7">Superior completo</option>
+                            <option value="8">Mestrado</option>
+                            <option value="9">Doutorado</option>
+                        </select>
+                    </label> <br><br>
+        
+                    <label>
+                        Profissão: <br>
+                        <input type="text" name="prof" id="input1" /> <br><br>
+                    </label>
+        
+                    <label>
+                        Cargo: <br>
+                        <input type="text" name="cargo" id="input1" /> <br><br>
+                    </label>
+        
+                    <label>
+                        Nome da empresa que trabalha: <br>
+                        <input type="text" name="empresa" id="input1"/> <br><br>
+                    </label>
+
+                    <label>Descreva suas atribuições: <br></label><br>
+                    <textarea name="campo_text" id="area1"></textarea>
+        
+                </fieldset>
+
+            </div>
+
+
+            <div class="fieldset3">
+
+                <fieldset id="field3">
+                    <legend>Quem eu sou</legend>
+        
+                    <label>Fale sobre você aqui: <br></label><br>
+                    <textarea name="campo_text" id="area2"></textarea><br><br><br><br>
+        
+                </fieldset>
+
+            </div>
+
+        </div>
+
+        <div class="botao">
+
+            <label>
+                <input type="checkbox" />
+                Eu declaro que li e concordo com os <a href="paginas/termos.html" target="_blank" class="termoslink">termos e condiçõies de uso. <br><br> </a> 
+            </label>
+            
+            <button>Enviar</button>
+
+        </div>
+        
+    </body>
+</html>

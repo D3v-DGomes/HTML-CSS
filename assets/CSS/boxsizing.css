@@ -1,0 +1,28 @@
+body {
+    background-color: #3c3c3c;
+}
+.geral {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px;
+}
+.box1 {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 15px;
+    background-color: #F00;
+    color: #FFF;
+    box-sizing: content-box;
+}
+.box2 {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 15px;
+    background-color: #000;
+    color: #FFF; 
+    box-sizing: border-box;
+}

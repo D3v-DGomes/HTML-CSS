@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formularios</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="formularios2.css" />
+    </head>
+    <!--Formularios servem para que o usuário preencha os campos do site.
+    A Função action serve para encaminhar o formulário para a pasta escolhida.
+    A função method = GET realizará uma requisição dos dados preenchidos pelo usuários e o exibirá junto com a URL da página.
+    A fução method = POST vai fazer uma requisição interna, ou seja, os dados não serão exibidos no URL da página. -->
+    <body>
+        <h1>Página de teste</h1>
+        <h2>Área de cadastro</h2>
+        <form action="paginas/tabelas.html" method="GET">
+
+            <label>
+                Nome completo: <br/>
+                <input type="text" name="nome" />
+            </label>
+
+            <label>
+                Descrição:<br/>
+                <textarea name="descricao"></textarea>
+            </label>
+
+            <label>
+                Categoria:<br/>
+                <select name="categoria">
+                    <option value="1">Categoria 1</option>
+                    <option value="2">Categoria 2</option>
+                    <option value="3">Categoria 3</option>
+                    <option value="4">Categoria 4</option>
+                    <option value="5">Categoria 5</option>
+                </select>
+            </label>
+
+            <label>
+                <input type="checkbox" />
+                Eu declaro que li e concordo com os <a href="paginas/termos.html" target="_blank" class="termoslink">termos e condiçõies de uso. </a> 
+            </label>
+
+            <button>Fazer cadastro</button>
+        </form>
+        <h2>Área de login</h2>
+    </body>
+</html>

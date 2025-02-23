@@ -1,0 +1,20 @@
+a {
+    width: 500px;
+    height: 120px;
+    font-size: 35px;
+    right: -140px;
+    top: 60px;
+    color: aliceblue;
+    background: linear-gradient(180deg, #00a, #000);
+    text-shadow: 1px 1px 3px #fff;
+    box-shadow: 5px 5px 5px 2px #3c3c3c;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    transform: rotate(45deg);
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans';
+    text-decoration: none;
+}

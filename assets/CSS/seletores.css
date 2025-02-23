@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+}
+
+input, a {
+    display: block;
+}
+
+a {
+    font-size: 30px;
+    margin: 10px;
+    padding: 5px;
+    border: solid 10px #0000FF;
+}
+:required {
+    border-radius: 15px;
+    background-color: #be0808;
+}
+
+a[href^="https"] {
+    background-color: #3c3c3c;
+}
+
+a[href*="brasileirao"] {
+    background-color: green;
+}
+
+a[href*="www"] {
+    background-color: aqua;
+}
+
+div {
+    color: #FFF;
+    background-color: #000;
+    margin: 10px;
+    padding: 5px;
+}
+
+div:empty {
+    background-color: pink;
+}
+p::first-letter {
+    font-size: 25px;
+    font-weight: bold;
+}
+p::first-line {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.child {
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    height:130px;
+    background-color: red;
+}
+div:first-of-type {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+div:last-of-type {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+body :not(div) {
+    background-color: #ccc;
+}
+h2::before {
+    content: "==>";
+    color: blueviolet;
+    background-color: #000;
+}
+h2::after {
+    content: "<==";
+    color: blueviolet;
+    background-color: #000;
+}
+.balao {
+    font-size: 35px;
+    background-color: #0000FF;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 22px;
+}
+.balao::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: -12px;
+    margin-top: 15px;
+
+    border: 30px solid;
+    border-color: #0000FF transparent transparent transparent;
+
+}
+.balao2 {
+    font-size: 35px;
+    background-color: #ff9100;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 22px;
+}
+.balao2::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 55px;
+
+
+    border: 30px solid;
+    border-color:#ff9100 transparent   transparent  transparent ;
+
+}

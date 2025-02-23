@@ -1,0 +1,46 @@
+@keyframes exemplo {
+    10% {background-color:red;top:0px;left:0px;}
+    20% {background-color:black;top:0px;left:250px;}
+    30% {background-color:blue;top:250px;left:250px;}
+    40% {background-color:blueviolet;top:250px;left:0px;}
+    50% {background-color:red;top:0px;left:0px;}
+    60% {background-color:green;top:0px;right:250px;}
+    70% {background-color:black;top:0px;right:250px;}
+    80% {background-color:yellow;top:250px;right:250px;}
+    90% {background-color:blueviolet;top:250px;right:0px;}
+    100% {background-color:red;top:0px;right:0px;}
+}
+
+
+body {
+    margin:0;
+    margin-top: 30px;
+}
+
+.exemplo {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    position:relative;
+    animation-name:exemplo;
+    animation-duration:10s;
+    animation-delay: 5s;
+    animation-iteration-count: 2;
+    transition: all 1s linear;
+}
+
+.exemplo:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 250px;
+    background-color: #888;
+    box-shadow: 5px 5px 3px;
+}
+a {
+    margin-top: 90px;
+    margin-left: 25px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    border-radius: 30px;
+}

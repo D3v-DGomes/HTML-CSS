@@ -1,0 +1,51 @@
+body {
+    background-image: url(../imagens/Nitro_.jpg);
+    background-size: cover;
+    background-position: top;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+div {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+h1 {
+    color: #CCC;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+}
+h1:hover {
+    background-color: #000;
+    color: #f00;
+}
+table {
+    width: 95%;
+    margin: auto;
+    color: aliceblue;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+thead {
+    background-color: #000;
+}
+td, th {
+    padding: 12px;
+    text-align: center;
+    border: solid 3px #000;
+}
+tr:hover {
+    background-color: #000;
+    color: #f00;
+}
+tbody tr:nth-child(even) {
+    background-color: #6d012b;
+    background-color: rgba(94, 18, 36, 0.);
+}
+tbody tr:nth-child(even):hover {
+    background-color: #000;
+    color: #f00;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formularios</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="formularios.css" />
+    </head>
+    <!--Formularios servem para que o usuário preencha os campos do site.
+    A Função action serve para encaminhar o formulário para a pasta escolhida.
+    A função method = GET realizará uma requisição dos dados preenchidos pelo usuários e o exibirá junto com a URL da página.
+    A fução method = POST vai fazer uma requisição interna, ou seja, os dados não serão exibidos no URL da página. -->
+    <body>
+
+        <h1>Página teste de Login</h1>
+        <form action="paginas/inputs.html" method="GET">
+            <label>Usuário:<br>
+                <input type="text" name="usuario" />
+            </label>
+            <label for="password">Senha:</label>
+            <input type="password" name="senha" id="password"/>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"/>
+            <label>Sexo:</label>
+            <p>Masculino <input type="radio" name="sexo"/> Feminino <input type="radio" name="sexo"/></p>
+
+            <label>
+                <input type="checkbox" name="verificar" />
+                Eu declaro que li e concordo com os termos de uso deste site.
+            </label>
+
+            <label>
+                <input type="checkbox" name="desejo" />
+                Desejo receber emails contendo novidades e ofertas.
+            </label>
+            <input type="submit"value="ENVIAR" />
+
+            <h1>Outros inputs</h1>
+            <label for="cor">Cor:</label>
+            <input type="color" name="cor" id="cor"/>
+            <label for="data">Data:</label>
+            <input type="datetime-local" name="data" id="data"/>
+            <label for="number">Número:</label>
+            <input type="number" name="numero" id="number"/>
+            <label>Ajuste:</label>
+            <input type="range" name="volume" />
+            <label>Pesquisar:</label>
+            <input type="search" name="pesquisar" />
+            <label>Telefone:</label>
+            <input type="tel" name="telefone" />
+            <label>Hora:</label>
+            <input type="time" name="hora" />
+            <label>URL:</label>
+            <input type="url" name="url" />
+            <label>Semana:</label>
+            <input type="week" name="semana" />
+
+            <h1>Formulários usando Select</h1>
+            <label>Tipo do protudo:</label>
+                <select name="order" size="2" multiple>
+                    <option value="bestseller">Mais vendidos</option>
+                    <option value="last" selected>Recentes</option>
+                    <option value="cheaper">Mais baratos</option>
+                    <option value="more expansive">Mais caros</option>
+                    <option value="more rated">Mais avaliados</option>
+                </select>
+                <input type="submit" value="ENVIAR"/>
+            <h1>Campo de observações</h1>
+                <textarea name="descricao" style="width: 400px; height: 150px;"></textarea>
+                <input type="submit" value="ENVIAR" />
+        </form>
+    </body>
+</html>
