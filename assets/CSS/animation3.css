@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    margin: 30px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+
+    /* animation-name: fly;    /*Define o nome da animação que será usado no keyframes*/
+    /* animation-duration: 3s;     Define o tempo de duração da animação */
+    /* animation-timing-function: steps(55); Define a suavização da animação como ocorre nas transições. Os steps() servem para executar as animações conforme a quantidade de frames informada. */ 
+    /* animation-delay: 1s;
+    animation-iteration-count: infinite; /*Define a quantidade de vezes que animação deve ser executada antes de parar*/
+    /* animation-direction: alternate; Define a direção que a animação terá  */
+    /* animation-fill-mode: forwards;  /*Define o modo que a animação terá após o término da execução. forwards para ficar no fim, backwards para ficar no inicio e o both para ficar com as anteriores*/
+    /* animation-play-state: paused; Define o estado da animação. Muito bom para ser utilizado em um hover em que faz a animação parar quando o cursor está sobre ela. */ 
+    animation: fly 1.5s linear infinite; /*Modo mais prático de utilizar as propriedades descritas acima sem nomeá-las*/
+}
+
+
+@keyframes fly {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(400px, 400px);
+    }
+    80% {
+        transform: translate(800px, -60px);
+    }
+    100% {
+        transform: translate(calc(100vw - 270px), 0);
+    }
+}

@@ -1,0 +1,45 @@
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    margin: 30px;
+}
+
+.box {
+    outline: 5px solid red;
+}
+
+/* USANDO transform:
+
+/* A diferença entre o translateX para o margin, é que naquele a área do box não é alterada.
+/* translateX --> desloca para os lados (valores positivos ou negativos)
+/* translateY --> desloca para cima ou baixo (valores positivos ou negativos)
+/* translate(x, y) --> vai possuir dois parâmetros, X e Y.
+
+/* scale() --> aumenta a proporção de acordo com o valor informado dentro do parênteses. Possui as mesmas propriedades de X e Y descritas acima.
+
+/* rotate(deg ou turn) --> rotaciona a imagem em graus positivos e negativos (deg), ou em voltas (turn).
+
+/* skewX ou Y(deg) --> inclina a imagem com valores positivos e negativos. */
+
+img {
+    width: 300px;
+    height: 300px;
+    transform: translateX(-100px);
+    transform: translateY(-100px);
+}
+
+.box-transition {
+    background-color: #157bad;
+    height: 300px;
+    width: 300px;
+
+    transition-property: background-color, border-radius;   /* Permite a escolha de quais propriedades sofrerão os efeitos de animation*/
+    transition-duration: 2s, 1.5s;  /* Define a duração da animação. Para cada propriedade, há um valor */
+    /* transition-delay: 1s;   Define o tempo de espera para que a animação se inicie */
+    transition-timing-function: cubic-bezier(.15, .89, .85, .27); /* Usado para suavizar a animação com ease-in (início), ease-out (fim), ease-in-out (início e fim) ou cubic-bezier (função de tempo da animação)*/
+}
+.box-transition:hover {
+    background-color: #ec6840;
+    border-radius: 50%;
+}

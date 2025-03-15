@@ -1,0 +1,81 @@
+body {
+    animation: gradient 10s ease infinite;
+    animation-delay: 2s;
+    background: linear-gradient(180deg, #461600, #e45310, #f51e0e, #ff0000) no-repeat;
+    background-size: 300% 300%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+    font-size: 300%;
+}
+
+.reveal {
+    width: 1000px;
+    height: 500px;
+    background-color: rgba(189, 206, 189, 0.3);
+    border-radius: 7%;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+h1, h6, ul {
+    display: grid;
+    justify-content: center;
+}
+
+h6, ul {
+    margin-top: -100px;
+}
+
+li {
+    animation: fade 1ms 1s ease forwards;
+    font-size: 30px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+}
+li::after {
+    animation: text-reveal 2s cubic-bezier(0.86, 0, 0.17, 1) forwards;
+    background-color: #e6dede;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 50% 0%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 50% 100%;
+    }
+}
+
+@keyframes text-reveal {
+    from {
+        transform: translateX(-101%);
+    }
+
+    to {
+        transform: translateX(101%);
+    }
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
