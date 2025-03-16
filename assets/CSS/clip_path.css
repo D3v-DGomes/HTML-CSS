@@ -1,0 +1,31 @@
+/* Basic-shape */
+body {
+    margin: 0;
+    box-sizing: none;
+    width: 100vw;
+    height: 100vh;
+    grid-auto-flow: column;
+    justify-content: center;
+    background-color: #23ab;
+}
+
+/* img {
+
+    /* clip-path: inset(5px 10px 190px 10px);     Realiza uma contração no objeto. Aceita parâmetro das quatro direções em sentido horário */
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); Deve-se informar as coordenadas de X e Y a cada vírgula. É possível fazer qualquer figura geométrica com esse comando. */
+
+
+p {
+    clip-path: circle(500px at 80% 30%);    /*Arredonda a imagem como o border-radius faz. O valor atribuido é em relação a área disponível.*/
+    /*circle(value at X% Y%) método mais avançado*/
+}
+
+a {
+    clip-path: ellipse(20% 200px at 150px 300px);   /*É parecido com o circle, mas precisa de dois valores iniciais por ser um elípse*/
+}
+
+
+/* Clip-source */
+img {
+    clip-path: url("http://www.w3.org/2000/svg");
+}
