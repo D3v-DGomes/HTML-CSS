@@ -1,0 +1,100 @@
+body {
+    background-color: #CCC;
+}
+.box {
+    background-color: orange;
+    width: 85px;
+    height: 85px;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: animation1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+h2 {
+    margin-top: 45px;
+}
+
+/* Animation-timing-function */
+#animation-div1 {
+    animation-timing-function: linear;
+}
+#animation-div2 {
+    animation-timing-function: ease;
+}
+#animation-div3 {
+    animation-timing-function: ease-in;
+}
+#animation-div4 {
+    animation-timing-function: ease-out;
+}
+#animation-div5 {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animation1 {
+    from {left: 0}
+    to {left: 50%};
+}
+
+/* Shorthand - name, duraction, timing-function, delay, iteration */
+#animation-div6 {
+    background-color: darkblue;
+    width: 85px;
+    height: 85px;
+    position: relative;
+    animation: animation2 4s ease-out 1s infinite;
+}
+
+@keyframes animation2 {
+    0% {left: 0px;}
+    25% {left: 40px; background-color: blue;}
+    45% {left: 80px; background-color: darkorchid;}
+    60% {left: 150px; background-color: orange;} 
+    100% {left: 0px; background-color: red;}
+}
+
+/* Transition */
+.button {
+    display: block;
+    position: relative;
+    padding: 12px;
+    width: 120px;
+    height: 55px;
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #333;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+.button:hover {
+    color: #333;
+    background-color: #FFF;
+}
+
+.transition {
+    margin-top: 40px;
+    width: 50px;
+    height: 100px;
+    background-color: red;
+    transition: 4s;
+}
+.transition:hover {
+    width: 300px;
+}
+
+/* Calc */
+.div-calc {
+    height: 250px;
+    width: 500px;
+    position: relative;
+    margin: 20px;
+    margin-top: 40px;
+    background-color: #DDD;
+    border: 1px solid red;
+}
+
