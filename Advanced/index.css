@@ -118,3 +118,48 @@ h2 {
 .calc4 {
     width: calc(50% / 2);
 }
+
+/* Gradient */
+.gradient-box {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linear1 {
+    background-image: linear-gradient(purple, blue);
+}
+.linear2 {
+    background-image: linear-gradient(to right, purple, blue);
+}
+.linear3 {
+    background-image: linear-gradient(to left, purple, blue);
+}
+.linear4 {
+    background-image: linear-gradient(to top, purple, blue);
+}
+.linear5 {
+    background-image: linear-gradient(to top right, purple, blue);
+}
+.linear6 {
+    background-image: linear-gradient(to top left, purple, blue);
+}
+
+
+.radial1 {
+    background-image: radial-gradient(#3A3042, #D89D47, #FF784F);
+}
+.radial2 {
+    background-image: radial-gradient(#3A3042 10%, #D89D47 30%, #FF784F);
+}
+.radial3 {
+    background-image: radial-gradient(circle, #3A3042,#D89D47,#FF784F);
+}
