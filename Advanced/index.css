@@ -163,3 +163,16 @@ h2 {
 .radial3 {
     background-image: radial-gradient(circle, #3A3042,#D89D47,#FF784F);
 }
+
+
+/* font face */
+
+@font-face {
+    font-family: "Bungee Spice";
+    src: url(./advanced_assets/BungeeSpice-Regular.ttf);
+}
+
+.fontface {
+    font-family: "Bungee Spice";
+    font-size: 45px;
+}
